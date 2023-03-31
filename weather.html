@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="weather.css">
+  
+  <title>Weather App</title>
+  <script src="https://kit.fontawesome.com/a8110299f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="data">
+        <div class="location"><a onclick="getweatherdata()">Your Location</a> </div>
+        <div class="container">
+            <div class="adresse">
+                <img  id="main-section-icon">
+                <div class="temperature" id="temperature">3°C</div>
+                <div class="city" id="zone">Albuquerque,NM</div>
+                <div class="description" id="description">it's clear right now</div>
+            </div>
+            <div class="weather">
+                <div>
+                    <div>Wind:</div>
+                    <i class="fa-solid fa-wind"></i>
+                    <div id="wind">11.27Km/h</div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sun"></i>
+                    <div>Sunrise</div>
+                    <div id="sunrise-time">7:8 am</div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-moon"></i>
+                    <div>Sunset:</div>
+                    <div id="sunset-time">5:31 pm</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="forecast">
+        <div class="title">5-Day Forecast</div>
+        <div class="weekdays" id="days-forecast">
+            <div class="day" >
+                <div class="entete">
+                    <i class="fa-solid fa-sun icon"></i>
+                    <div class="name">SUN</div>
+                </div>
+                <div class="tail">
+                    <div class="max">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div>13°</div>
+                    </div>
+                    <div class="min">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>-2°</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="entete">
+                    <i class="fa-solid fa-sun icon"></i>
+                    <div class="name">MON</div>
+                </div>
+                <div class="tail">
+                    <div class="max">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div>12°</div>
+                    </div>
+                    <div class="min">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>-4°</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="entete">
+                    <i class="fa-solid fa-cloud-sun icon"></i>
+                    <div class="name">TUE</div>
+                </div>
+                <div class="tail">
+                    <div class="max">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div>12°</div>
+                    </div>
+                    <div class="min">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>-3°</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="entete">
+                    <i class="fa-solid fa-cloud-sun icon"></i>
+                    <div class="name">WED</div>
+                </div>
+                <div class="tail">
+                    <div class="max">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div>16°</div>
+                    </div>
+                    <div class="min">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>-2°</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="entete">
+                    <i class="fa-solid fa-cloud-sun icon"></i>
+                    <div class="name">THU</div>
+                </div>
+                <div class="tail">
+                    <div class="max">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div>14°</div>
+                    </div>
+                    <div class="min">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>0°</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
